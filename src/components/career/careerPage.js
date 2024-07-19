@@ -16,18 +16,17 @@ const StyledPaper = styled(Paper)`
   background-color: #ffffff;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 
-  border-radius: 10px; /* Rounded corners for the paper */
+  border-radius: 10px; 
   
-  /* Apply MUI theme colors and typography */
   .MuiTypography-root {
     text-align: center;
     font-weight: 600;
-    color: #333; /* Adjust text color */
+    color: #333;
   }
   
   .MuiButton-root {
-    background-color: #007acc; /* Adjust button background color */
-    color: #fff; /* Adjust button text color */
+    background-color: #007acc; 
+    color: #fff; 
     transition: background-color 0.3s;
     border-radius: 5px;
     text-transform: none;
@@ -38,8 +37,6 @@ const StyledPaper = styled(Paper)`
     }
   }
 `;
-
-
 
 const jobPositions = [
   { 
@@ -74,8 +71,6 @@ const jobPositions = [
     experience: "0 - 3 Years" 
   },
 ];
-
-
 
 function Careers() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -115,7 +110,6 @@ function Careers() {
             </div>
 
       <Container style={{ marginTop: "20px" }}>
-     
         <Typography variant="h4">We are hiring</Typography>
         <Grid container spacing={3}>
           {jobPositions.map((position, index) => (
@@ -131,7 +125,6 @@ function Careers() {
           ))}
         </Grid>
       </Container>
-
       <Modal  open={modalOpen} onClose={handleCloseModal}>
   <Box
   className="modal-paper"
@@ -162,7 +155,6 @@ function Careers() {
             <li key={index}>{requirement}</li>
           ))}
         </ul>
-        {/* Add other details here */}
       </>
     )}
     <Button style={{ margin: '10px' }} variant="contained" color="primary" 
